@@ -32,17 +32,19 @@ function contains(list,e){
 //Task 4
 function oddElements(list){
     let temp = [];
-    for(let d=1; d<list.length; d++){
-        if(d == isOdd()){
+    for(let d=1; d<list.length; d=d+2){
           temp.push(list[d]);
-        }
     }
     return temp;
 }
 
 //Task 5
 function total(list){
-
+    let  total=0;
+    for(let t=0; t<list.length; t++){
+      total = total + list[t];
+    }
+    return total;
 }
 
 //Task 6
@@ -80,12 +82,17 @@ function rotate(list,k){
 function fibonacci(){
 
 }
-    let testVariable = new largest([8,5,2,3,6,9,1,4,7])
-    let testVariablei = new reverse([6,5,9,10,7,3])
-    let testVariableii = new contains([6,5,8,7,9,3,2,1],5)
-    let testVariableiii = new reverse([6,5,9,10,7,3])
 
-    console.log(testVariable);
-    console.log(testVariablei);
-    console.log(testVariableii);
-    console.log(testVariableiii);
+    let testVar = new largest([6,5,9,10,7,3]);
+    let testVari = new reverse([6,5,9,10,7,3]);
+    let testVarii = new contains([6,5,9,10,7,3],5);
+    let testVariii = new oddElements([6,5,9,10,7,3]);
+    let testVariiii = new total([6,5,9,10,7,3]);
+    let testVariiiii = new isPalindrome([6,5,9,10,7,3]);
+
+    console.log(testVar);
+    console.log(testVari);
+    console.log(testVarii);
+    console.log(testVariii);
+    console.log(testVariiii);
+    console.log(testVariiiii);
