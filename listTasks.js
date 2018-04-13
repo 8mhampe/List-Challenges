@@ -55,11 +55,18 @@ function isPalindrome(list){
 //Task 7
 //Do second to last
 function recursiveTotal(list){
-
+    let  total=0;
+    for(let t=0; t<list.length; t++){
+      total = total + list[t];
+    }
+    return total;
 }
 //Task 8
 function concatenate(listA, listB){
-
+    for (let b=0; b<listB.length; b++){
+        listA.push(listB[b])
+    }
+    return listA;
 }
 
 //Task 9
@@ -89,6 +96,8 @@ function fibonacci(){
     let testVariii = new oddElements([6,5,9,10,7,3]);
     let testVariiii = new total([6,5,9,10,7,3]);
     let testVariiiii = new isPalindrome([6,5,9,10,7,3]);
+    let testVariiiiii = new recursiveTotal([6,5,9,10,7,3]);
+    let testVariiiiiii = new concatenate([6,5,9,10,7,3],[8,9,4,5,6,4]);
 
     console.log(testVar);
     console.log(testVari);
@@ -96,3 +105,5 @@ function fibonacci(){
     console.log(testVariii);
     console.log(testVariiii);
     console.log(testVariiiii);
+    console.log(testVariiiiii);
+    console.log(testVariiiiiii);
